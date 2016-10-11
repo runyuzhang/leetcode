@@ -1,3 +1,22 @@
-# My Awesome Book
+# Find leaves in binary tree
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
+
+```
+          1
+         / \
+        2   3
+       / \     
+      4   5  
+```
+
+This tree would yield \[4, 5, 3\], \[2\], \[1\]
+
+
+
+Main Idea: 
+
+* Sub-problem: ordered leaves in the subtree, zip the ordered leaves from left tree and right tree, and then append the root
+
+
+
